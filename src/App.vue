@@ -96,5 +96,4 @@ header, .navbar, .navbar-brand, .text, .router-view {
     width: 30px; 
   }
 }
-
 </style>

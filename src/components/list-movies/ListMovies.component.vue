@@ -136,5 +136,4 @@ export default class ListMoviesComponent extends Vue {
         flex: 0 0 calc(100% - 20px);
     }
 }
-
 </style>

@@ -13,3 +13,5 @@ export default class Movie {
       this.poster = data.Poster || '';
     }
   }
+
+  

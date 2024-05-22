@@ -9,21 +9,18 @@
                 <span style="color: white;">Buscar</span> </v-btn>
         </v-col>
     </v-row>
-
     <v-row justify="space-around">
     <v-col cols="12" style="color: white; opacity: ;">
         <h2 v-if="showSearchResults" style="color: white; font-size: 30px; padding: 15px;">Resultado da Pesquisa</h2>
     </v-col>
     </v-row>
-
     <v-row justify="space-around">
         <v-col v-if="loading || error || movies.length === 0" cols="12" sm="8" md="6" class="d-flex flex-column align-center">
             <v-alert v-if="error" type="error">Nenhum filme foi encontrado com o título "{{ searchQuery }}"</v-alert>
             <v-progress-circular v-if="loading" indeterminate color="primary">Carregando...</v-progress-circular>
             <v-row v-else-if="movies.length === 0" justify="center"></v-row>
         </v-col>
-    </v-row>
-
+    </v-row>git 
     <div justify="space-around" class="movie-grid">
         <div justify="space-around" v-for="movie in movies" :key="movie.imdbID" class="movie-item" @click="viewMovieDetails(movie)" style="background-color:#5753539d; z-index: 1;">
             <v-img :src="movie.poster" class="movie-poster"></v-img>
@@ -139,5 +136,4 @@ export default class ListMoviesComponent extends Vue {
         flex: 0 0 calc(100% - 20px);
     }
 }
-
 </style>

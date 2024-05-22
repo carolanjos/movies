@@ -22,7 +22,7 @@
             <v-progress-circular v-if="loading" indeterminate color="primary">Carregando...</v-progress-circular>
             <v-row v-else-if="movies.length === 0" justify="center"></v-row>
         </v-col>
-    </v-row>
+    </v-row>git 
 
     <div justify="space-around" class="movie-grid">
         <div justify="space-around" v-for="movie in movies" :key="movie.imdbID" class="movie-item" @click="viewMovieDetails(movie)" style="background-color:#5753539d; z-index: 1;">
